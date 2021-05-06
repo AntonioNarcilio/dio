@@ -16,5 +16,9 @@ APP.get('/', (request, response) => {
 });
 
 APP.listen(PORT, () => {
-  console.log(colors.blue(`\nServer running on the port 🚪: ${PORT}`));
+  console.log(
+    colors.green('\nServer running on the port 🚪:'),
+    colors.yellow(`${PORT}`),
+  );
 });
+
