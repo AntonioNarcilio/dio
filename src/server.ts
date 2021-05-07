@@ -1,20 +1,22 @@
 import express from 'express';
 import colors from 'colors';
+import router from './routes';
+
 import 'dotenv/config';
 
 const APP = express();
+APP.use(router);
+APP.use(express.static('public'));
+
 let { PORT } = process.env;
 
 if (PORT == null) {
   PORT = '3333';
 }
 
-APP.get('/', (request, response) => {
-  response.json({
-    message: 'Meu server Express, com Typescript e ESLint!',
-  });
-});
-
 APP.listen(PORT, () => {
-  console.log(colors.blue(`\nServer running on the port 🚪: ${PORT}`));
+  console.log(
+    colors.green('\nServer running on the port 🚪:'),
+    colors.yellow(`${PORT}`),
+  );
 });
