@@ -9,7 +9,7 @@ Desafio proposto na plataforma `digitalinnovation.one` de reconstruir a página 
 1. Primeiramente clone o repositório através do comando abaixo
    👇 (sem o $).
    ~~~
-   $ git clone git@github.com:AntonioNarcilio/dio-landing-page-instagram
+   $ git clone --branch anding-page-instagram git@github.com:AntonioNarcilio/dio-landing-page-instagram
    ~~~
 
 2. Depois instale as dependências necessárias para que a aplicação funcione conforme o esperado. Entre no diretório criado `dio-landing-page-instagram` com o comando acima e execute
