@@ -1,3 +1,7 @@
-## Repositórios:
+# Tecnologias/Ferramentas utilizadas:
 
-[Recriando a pagina inicial do instagram](https://github.com/AntonioNarcilio/dio/tree/landing-page-instagram)
+- [x] React.Js
+- [x] Next.js
+- [x] Typescript
+- [x] Styled-components
+- [x] Eslint
