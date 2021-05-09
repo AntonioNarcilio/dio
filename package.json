@@ -1,9 +1,9 @@
 {
-  "name": "template-reactjs-with-nextjs-and-ts",
+  "name": "clone-netflix",
   "version": "0.0.1",
   "author": {
     "name": "Antonio Narcilio",
-    "url": "https://github.com/AntonioNarcilio/template-reactjs-with-nextjs-and-ts"
+    "url": "https://github.com/AntonioNarcilio/dio"
   },
   "scripts": {
     "setup": "yarn install",
@@ -12,9 +12,11 @@
     "start": "next start"
   },
   "dependencies": {
+    "keen-slider": "^5.4.0",
     "next": "latest",
     "react": "^16.8.0",
     "react-dom": "^16.8.0",
+    "react-icons": "^4.2.0",
     "react-is": "^16.8.0",
     "styled-components": "^5.0.0"
   },

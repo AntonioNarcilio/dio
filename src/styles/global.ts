@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components';
 
 export default createGlobalStyle`
 * {
@@ -12,23 +12,24 @@ export default createGlobalStyle`
 }
 
 body {
-  background-color: ${(props) => props.theme.colors.primary};
-  color: ${(props) => props.theme.colors.text};
+  background-color: ${(props) => props.theme.colors.secondary};
+  font-family: 'Arial', Times, serif;
+  color: ${(props) => props.theme.colors.white};
 }
 
-body,
+/* body,
 input,
 textarea,
 button {
   font: 400 1rem "inter", sans-serif;
-}
-
+} 
+*/
 button {
   cursor: pointer;
 }
 
 a {
-  color: inherit; /* herda a cor do container dos links */
+  color: inherit; 
   text-decoration: none;
 }
 
@@ -45,16 +46,4 @@ a {
   }
 }
 
-`;
-
-export const GlobalContainer = styled.div`
-  /* margin-left: calc(1024px / 15); */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-
-  @media (max-width: 720px) {
-    margin: 0 auto;
-  }
 `;
