@@ -6,6 +6,7 @@ export default {
     secondary: '#141414',
     white: '#fff',
     grey: '#AAA',
+    greyDark: '#545456',
     black: '#000000'
   },
 };

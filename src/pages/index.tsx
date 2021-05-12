@@ -1,10 +1,11 @@
 import Link from 'next/link';
-import { FaPlayCircle, FaInfoCircle } from 'react-icons/fa';
+// import { FaPlayCircle, FaInfoCircle } from 'react-icons/fa';
+import { FaPlay, FaInfoCircle } from 'react-icons/fa'
 import { Header, Main } from '../styles/Index/styles';
 import Slider from '../components/Slider';
 
-
 export default function Home() {
+  
   return (
     <>
       <Header>
@@ -26,12 +27,13 @@ export default function Home() {
             <p className="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
             <div className="botoes">
               <button>
-                <FaPlayCircle size={14} style={{ marginRight: '8px' }} />
-                ASSISTIR AGORA
+                <FaPlay size={14} style={{ marginRight: '8px' }} />
+                Assistir
               </button>
+
               <button>
                 <FaInfoCircle size={14} style={{ marginRight: '8px' }} />
-                MAIS INFORMAÇÕES
+              Mais Informações
               </button>
             </div>
           </div>

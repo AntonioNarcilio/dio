@@ -18,8 +18,9 @@ export const Header = styled.header`
     color: ${(props) => props.theme.colors.grey};
     margin-right: 10px;
   
-    &:hover{
-    color: ${(props) => props.theme.colors.white};
+    &:hover {
+      color: ${(props) => props.theme.colors.white};
+      cursor: not-allowed;
     }
   }
 
@@ -28,8 +29,11 @@ export const Header = styled.header`
 export const Main = styled.main`
   .filme-principal {
       font-size: 1rem;
+      
       background: 
-        linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%),  
+        linear-gradient(
+          rgba(0,0,0,.50) 65%, 
+          rgb(20, 20, 20, 1) 95%),  
         url('/img/capa-house.jpg');
 
       height: 40rem;
@@ -43,7 +47,7 @@ export const Main = styled.main`
     .container{
       width: 88%;
       height: 20%;
-      margin-left: 20px;
+      margin-left: 1.25rem;
 
       .titulo {
         margin-top: 15%;
@@ -60,25 +64,36 @@ export const Main = styled.main`
         display: flex;
         flex-direction: row;
 
+
+        button:nth-child(1) {
+          background-color:white;
+          color: ${(props) => props.theme.colors.black};
+        }
+
         button {
           display: flex;
           align-items: center;
           justify-content: center;
 
-          background-color: rgba(0,0,0,.50);
-          border:none;
-          color: white;
+          background-color: ${(props) => props.theme.colors.greyDark};
+          border: none;
+          color: ${(props) => props.theme.colors.white};
+
+          border-radius: 4px;
 
           padding: 0.94rem 1.87rem;
           margin-right: 0.94rem;
-          font-size: 12px;
+          font-size: 0.9rem;
+          font-weight: 600;
 
           cursor: pointer;
           transition: .3s ease all;
-
+                    
           &:hover {
             background-color:white;
             color: ${(props) => props.theme.colors.black};
+
+            cursor: not-allowed;
           }
         }
       }

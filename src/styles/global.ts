@@ -24,9 +24,9 @@ button {
   font: 400 1rem "inter", sans-serif;
 } 
 */
-button {
-  cursor: pointer;
-}
+/* button {
+  cursor: not-allowed;
+} */
 
 a {
   color: inherit; 
