@@ -2,6 +2,7 @@ import { FaPlay, FaInfoCircle } from 'react-icons/fa';
 import Header from '../components/Header';
 import Main from '../styles/Index/styles';
 import Slider from '../components/Slider';
+import MyFooter from '../components/Footer';
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       </Main>
 
       <Slider />
+      <MyFooter />
     </>
   );
 }

@@ -106,3 +106,5 @@ dist
 
 # kde
 .directory
+
+.vercel
