@@ -1,24 +1,12 @@
-import Link from 'next/link';
-// import { FaPlayCircle, FaInfoCircle } from 'react-icons/fa';
-import { FaPlay, FaInfoCircle } from 'react-icons/fa'
-import { Header, Main } from '../styles/Index/styles';
+import { FaPlay, FaInfoCircle } from 'react-icons/fa';
+import Header from '../components/Header';
+import Main from '../styles/Index/styles';
 import Slider from '../components/Slider';
 
 export default function Home() {
-  
   return (
     <>
-      <Header>
-        <div className="container">
-          <img src="/netflix-name.png" alt="logo"/>
-          <nav>
-            <Link href="#"><a>Início</a></Link>
-            <Link href="#"><a>Séries</a></Link>
-            <Link href="#"><a>Filmes</a></Link>
-            <Link href="#"><a>Documentários</a></Link>
-          </nav>
-        </div>
-      </Header>
+      <Header />
 
       <Main>
         <div className="filme-principal">
@@ -26,14 +14,14 @@ export default function Home() {
             <h3 className="titulo">HOUSE OF CARDS</h3>
             <p className="descricao">Nada pode impedir o político sem escrúpulos Frank Underwood de conquistar Washington. Assista agora a nova temporada de House of Cards que está imperdível.</p>
             <div className="botoes">
-              <button>
+              <button type="button">
                 <FaPlay size={14} style={{ marginRight: '8px' }} />
                 Assistir
               </button>
 
-              <button>
+              <button type="button">
                 <FaInfoCircle size={14} style={{ marginRight: '8px' }} />
-              Mais Informações
+                Mais Informações
               </button>
             </div>
           </div>

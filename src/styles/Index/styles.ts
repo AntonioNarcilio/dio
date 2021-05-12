@@ -1,50 +1,24 @@
 import styled from 'styled-components';
 
-export const Header = styled.header`
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-
-    img {
-      margin: 1rem;
-      width: 10rem;
-    }
-  }
-
-  nav a {
-    text-decoration:none;
-    color: ${(props) => props.theme.colors.grey};
-    margin-right: 10px;
-  
-    &:hover {
-      color: ${(props) => props.theme.colors.white};
-      cursor: not-allowed;
-    }
-  }
-
-`;
-
-export const Main = styled.main`
+const Main = styled.main`
   .filme-principal {
-      font-size: 1rem;
-      
-      background: 
-        linear-gradient(
-          rgba(0,0,0,.50) 65%, 
-          rgb(20, 20, 20, 1) 95%),  
-        url('/img/capa-house.jpg');
+    font-size: 1rem;
 
-      height: 40rem;
-      background-size: cover;
-  
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
+    background:
+      linear-gradient(
+        rgba(0,0,0,.50) 65%,
+        rgb(20, 20, 20, 1) 95%),
+      url('/img/capa-house.jpg');
 
-    .container{
+    height: 40rem;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    .container {
       width: 88%;
       height: 20%;
       margin-left: 1.25rem;
@@ -88,7 +62,7 @@ export const Main = styled.main`
 
           cursor: pointer;
           transition: .3s ease all;
-                    
+
           &:hover {
             background-color:white;
             color: ${(props) => props.theme.colors.black};
@@ -98,6 +72,7 @@ export const Main = styled.main`
         }
       }
     }
-    
   }
 `;
+
+export default Main;
