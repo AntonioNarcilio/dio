@@ -1,6 +1,6 @@
 <h2 align="center"><b>Recriando a Interface do Netflix</b></h2>
 <a href="https://clone-netflix-two.vercel.app">
-  <img src="./.github/screen-capture.gif" />
+  <img src="./.github/screen-capture-01.gif" />
 </a>
 <h6 align="center">Clique na imagem para ir para o site</h6>
 <br>
