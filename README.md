@@ -1,4 +1,10 @@
-## Recriando a Interface do Netflix
+<h2 align="center"><b>Recriando a Interface do Netflix</b></h2>
+<a href="https://clone-netflix-two.vercel.app">
+  <img src="./.github/screen-capture.gif" />
+</a>
+<h6 align="center">Clique na imagem para ir para o site</h6>
+<br>
+
 Desafio proposto na plataforma `digitalinnovation.one` a interface do principal site de streaming mundial (Netflix), no qual foi abordado como estruturar um layout, técnicas de CSS3 com containers e variáveis, como posicionar os elementos com Flexbox, utilizando tecnologias simples como HTML5, CSS3 e JavaScript. Porém optei por utilizar tecnologias como: ReactJs, Nextjs, Typescript e Styled-components...
 
 <br>
