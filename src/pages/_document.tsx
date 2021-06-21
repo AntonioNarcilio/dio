@@ -4,8 +4,8 @@ import Document, {
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
 
-const TITLE_PAGE = 'Template';
-const DESCRIPTION = 'Texto descrevendo sobre a pagina';
+const TITLE_PAGE = 'Snake Game';
+const DESCRIPTION = 'Recriando o jogo da cobrinha';
 const URL_SITE = 'https://';
 const URI_IMAGE = 'https://';
 

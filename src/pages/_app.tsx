@@ -4,7 +4,6 @@ import { AppProps } from 'next/app';
 import { ThemeProvider } from 'styled-components';
 
 import dracula from '../styles/themes/dracula';
-// import light from '../styles/themes/light';
 import GlobalStyles from '../styles/global';
 
 export default function App({ Component, pageProps }:AppProps) {
@@ -12,7 +11,7 @@ export default function App({ Component, pageProps }:AppProps) {
     <>
       <ThemeProvider theme={dracula}>
         <Head>
-          <title>Template</title>
+          <title>Snake Game</title>
           <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         </Head>
         <GlobalStyles />

@@ -6,10 +6,28 @@ export const Container = styled.div`
   justify-content: center;
 
   width: 100%;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+
+`;
+
+export const GameArea = styled(Container)`
+  height: 95vh;
+  width: 95vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 1rem;
 
   h1 {
-    font-size: 50px;
-    color: ${(props) => props.theme.colors.text};
+    margin-bottom: 1rem;
+    color: rgb(52, 165, 52);
   }
+
+  canvas {
+    border-radius: 8px;
+  }
+
 `;
