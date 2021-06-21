@@ -41,7 +41,6 @@
 ├── next-env.d.ts
 ├── package.json
 ├── README.md
-├── tree.txt
 ├── tsconfig.json
 └── yarn.lock
 ```
