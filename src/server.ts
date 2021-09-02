@@ -9,7 +9,7 @@ if (PORT == null) {
   PORT = '3333';
 }
 
-APP.get('/', (request, response) => {
+APP.get('/v1/', (request, response) => {
   response.json({
     message: 'Meu server Express, com Typescript e ESLint!',
   });
@@ -21,4 +21,3 @@ APP.listen(PORT, () => {
     colors.yellow(`${PORT}`),
   );
 });
-
