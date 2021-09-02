@@ -3,5 +3,5 @@
 
 Cloning the repository
 ~~~bash
-git clone -b nodejs-express-ts git@github.com:AntonioNarcilio/template-with-nodejs-express-ts.git
+git clone -b nodejs-express-ts git@github.com:AntonioNarcilio/templates.git
 ~~~
