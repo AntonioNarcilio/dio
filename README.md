@@ -1,7 +1,7 @@
 ## Project with node.js, express, typescript and eslint
 
 
-Cloning the repository
+> cloning this repository
 ~~~bash
 git clone -b nodejs-express-ts git@github.com:AntonioNarcilio/templates.git
 ~~~
