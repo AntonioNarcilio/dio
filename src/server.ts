@@ -3,15 +3,11 @@ import colors from 'colors';
 import 'dotenv/config';
 
 const APP = express();
-let { PORT } = process.env;
-
-if (PORT == null) {
-  PORT = '3333';
-}
+let PORT = process.env.PORT ?? 3333;
 
 APP.get('/v1/', (request, response) => {
   response.json({
-    message: 'Meu server Express, com Typescript e ESLint!',
+    message: 'Meu server Express, com Typescript!',
   });
 });
 
