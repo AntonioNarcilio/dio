@@ -10,7 +10,7 @@
     "build": "tsc",
     "dev": "ts-node-dev -r tsconfig-paths/register --transpile-only --ignore-watch node_modules .",
     "eslint:init": "eslint --init",
-		"lint": "eslint . --ext .ts",
+    "lint": "eslint . --ext .ts",
     "lint:fix": "yarn lint --fix"
   },
   "dependencies": {
