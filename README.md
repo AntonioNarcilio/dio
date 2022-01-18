@@ -3,5 +3,5 @@
 
 > cloning this repository
 ~~~bash
-git clone -b nodejs-express-ts git@github.com:AntonioNarcilio/templates.git
+git clone -b nodejs-express-ts git@github.com:AntonioNarcilio/templates.git FOLDER_NAME
 ~~~
