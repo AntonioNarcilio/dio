@@ -10,6 +10,6 @@ router.get('/v1/', (request: Request, response: Response) => {
   });
 });
 
-router.get('/v1/users', createUserController.handle);
+router.post('/v1/users', createUserController.handle);
 
 export { router };
