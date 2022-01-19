@@ -1,5 +1,14 @@
-## Project with node.js, express, typescript, eslint, typeORM
+## Project API Rest
 
+~~~yaml
+technologies:
+  - nodejs
+  - express
+  - typescript
+  - typeorm
+  - jest
+  - eslint
+~~~
 
 > cloning this repository
 ~~~bash
