@@ -3,8 +3,8 @@
 ~~~yaml
 technologies:
   - nodejs
-  - express
   - typescript
+  - express
   - typeorm
   - jest
   - eslint
@@ -12,5 +12,5 @@ technologies:
 
 > cloning this repository
 ~~~bash
-git clone -b api-rest-nodejs git@github.com:AntonioNarcilio/templates.git api-rest-nodejs && cd api-rest-nodejs
+git clone -b api-rest-nodejs git@github.com:AntonioNarcilio/templates.git api-rest-nodejs && cd api-rest-nodejs && yarn setup
 ~~~
