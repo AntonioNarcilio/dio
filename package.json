@@ -13,7 +13,7 @@
     "lint": "eslint . --ext .ts",
     "lint:fix": "yarn lint --fix",
     "typeorm": "ts-node-dev ./node_modules/typeorm/cli.js",
-    "test": "jest"
+    "test": "jest NODE_ENV='test'"
   },
   "dependencies": {
     "colors": "^1.4.0",
