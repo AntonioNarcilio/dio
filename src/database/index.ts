@@ -1,7 +1,7 @@
-import { Connection, createConnection, getConnection } from 'typeorm';
+import { Connection, createConnection, getConnectionOptions } from 'typeorm';
 
 export default async ():Promise<Connection> => {
-  const defaultConnection = await getConnection();
+  const defaultConnection = await getConnectionOptions();
 
   return createConnection(
     Object.assign(defaultConnection),
