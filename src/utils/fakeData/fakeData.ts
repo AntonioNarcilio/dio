@@ -1,22 +1,31 @@
-/* eslint-disable class-methods-use-this */
 import { v4 as uuid } from 'uuid';
 import { CreateUserService } from '../../services/CreateUserService';
 
 class FakeData {
-  async execute() {
-    const createUserService = new CreateUserService();
+  createUserService = new CreateUserService();
 
-    await createUserService.execute({
+  async execute() {
+    await this.createUserService.execute({
       id: uuid(),
       name: 'Algum usuário',
       email: 'email@email.com',
     });
 
-    await createUserService.execute({
+    await this.createUserService.execute({
       id: uuid(),
       name: 'Outro usuário',
       email: '',
     });
+  }
+
+  async createUser() {
+    const user = await this.createUserService.execute({
+      id: uuid(),
+      name: 'Algum usuário',
+      email: 'email@email.com',
+    });
+
+    return user;
   }
 }
 
