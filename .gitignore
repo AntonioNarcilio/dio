@@ -106,3 +106,7 @@ dist
 
 # kde
 .directory
+
+# database
+.sqlite
+.sqlite3
