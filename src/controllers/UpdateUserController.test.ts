@@ -14,13 +14,13 @@ describe('UpdateUserController', () => {
 
   afterAll(async () => {
     const connection = getConnection();
-    connection.query('DELETE FROM users');
-    connection.close();
+    await connection.query('DELETE FROM users');
+    await connection.close();
   });
 
   const fakeData = new FakeData();
 
-  it('Deve retornar status 204 quando usuário for editado', async () => {
+  it('Deve retornar status 204 quando usuário for editado.', async () => {
     const mockUser = await fakeData.createUser();
     const updateUserController = new UpdateUserController();
     const request = {
@@ -35,6 +35,31 @@ describe('UpdateUserController', () => {
     expect(response.state.status).toBe(204);
   });
 
-  // @todo Desafio: criar um teste para verificar quando o id ou o nome não for
-  // @todo informado.
+  it('Deve retornar o status 400 caso o id não seja informado.', async () => {
+    const updateUserController = new UpdateUserController();
+    const request = {
+      body: {
+        id: '',
+        name: 'Outro nome',
+        email: 'nome@gmail.com',
+      },
+    } as Request;
+    const response = makeMockResponse();
+    await updateUserController.handle(request, response);
+    expect(response.state.status).toBe(400);
+  });
+  it('Deve retornar o status 400 caso o nome não seja informado.', async () => {
+    const mockUser = await fakeData.createUser();
+    const updateUserController = new UpdateUserController();
+    const request = {
+      body: {
+        id: mockUser.id,
+        name: '',
+        email: 'nome@gmail.com',
+      },
+    } as Request;
+    const response = makeMockResponse();
+    await updateUserController.handle(request, response);
+    expect(response.state.status).toBe(400);
+  });
 });
