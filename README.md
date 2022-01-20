@@ -8,6 +8,13 @@ technologies:
   - typeorm
   - jest
   - eslint
+classes:
+  - entendendo-o-typeorm
+  - criando-api-rest
+  - configurando-o-typeorm
+  - testes-automatizados
+  - tdd-com-jest
+
 ~~~
 
 > cloning this repository
