@@ -8,7 +8,7 @@ class GetAllUserService {
       .createQueryBuilder('users')
       .getMany();
 
-    console.log(users);
+    // console.log(users);
     return users;
   }
 }

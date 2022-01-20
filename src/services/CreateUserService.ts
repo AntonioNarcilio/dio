@@ -20,7 +20,7 @@ class CreateUserService {
         email,
       })
       .execute();
-    console.log(user.identifiers[0]);
+    // console.log(user.identifiers[0]);
     return user.identifiers[0];
   }
 }

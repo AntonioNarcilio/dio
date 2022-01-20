@@ -34,4 +34,11 @@ describe('DeleteUserController', () => {
     await deleteUserController.handle(request, response);
     expect(response.state.status).toBe(400);
   });
+  it('Deve retornar status 404 caso o id informado não exista.', async () => {
+    const deleteUserController = new DeleteUserController();
+    const request = makeMockRequest({ params: { id: 'a52c7830-2871-487d-a1bd-b838aac74496' } });
+    const response = makeMockResponse();
+    await deleteUserController.handle(request, response);
+    expect(response.state.status).toBe(404);
+  });
 });
